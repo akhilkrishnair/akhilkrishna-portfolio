@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
+    padding: 25px 25px;
 
 }
 
@@ -42,3 +42,16 @@ li{
     margin-right: 20px;
     
 }
+
+ul li:not(:hover){
+    transition: 0.4s;
+}
+ul li:hover{
+    cursor: pointer;
+    color: rgb(9, 163, 9);
+
+}
+
+
+/* ----- navbar end ---- */
+

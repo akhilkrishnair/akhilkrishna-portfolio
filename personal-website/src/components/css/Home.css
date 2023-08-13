@@ -1,0 +1,109 @@
+/* ----- bio start ----- */
+
+.bio-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.img-container{
+    position: relative;
+    width: 450px;
+    height: 440px;
+    border-radius: 50%;
+}
+.image{
+    border: solid 3px rgb(249, 249, 249);
+    position: absolute;
+    left: -50px;
+    width: 450px;
+    height: 440px;
+    border-radius: 50%;
+    outline: solid 6px rgb(76, 132, 237);
+
+
+}
+.hello{
+    font-size: 105px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.about-me{
+    padding: 25px 15px;
+    font-family: sans-serif;
+}
+.about-me h2{
+    margin-bottom: 5px;
+}
+.about-me p{
+    line-height: 32px;
+    color: rgb(46, 45, 45);
+}
+
+.pyth{
+    color: blue;
+}
+.dj{
+    color: rgb(145, 145, 63);
+}
+.ngo{
+    color: green;
+}
+.react{
+    color: rgb(35, 154, 238);
+}
+
+
+
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    margin: 30px -20px;
+
+}
+
+.my-cv{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(25, 105, 232);
+    border-radius: 50%;
+}
+.projects{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: violet;
+    
+}
+.contact-me{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(9, 150, 9);
+    border-radius: 50%;
+
+}
+
+.my-cv, .projects, .contact-me{
+    margin-right: 15px;
+    border: solid 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.my-cv:hover{
+    background-color: antiquewhite;
+}
+.projects:hover{
+
+    background-color: antiquewhite;
+}
+.contact-me:hover{
+
+    background-color: antiquewhite;
+}
