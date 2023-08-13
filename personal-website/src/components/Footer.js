@@ -1,9 +1,14 @@
 import React from 'react'
 import './css/Footer.css'
+import {FaLinkedin, FaGithub} from 'react-icons/fa/';
+
 const Footer = () => {
   return (
     <div className='footer-container'>
-        Footer
+        <h3>Phone <br/><div className='detail'>98-95-04-77-16</div></h3>
+        <h3>Email <br/><div className='detail'>akhilkrishnair@gmail.com</div></h3>
+        <h3>Follow me<br/><div className='icon'><FaLinkedin/></div><div className='icon'><FaGithub/></div></h3>
+        <h3 className='detail'> © 2023 By Akhil Krishna.</h3>
 
     </div>
   )

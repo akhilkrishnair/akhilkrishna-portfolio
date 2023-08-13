@@ -5,11 +5,11 @@ const Home = () => {
     return (
         <div className="bio-container">
             <div className="img-container">
-                <img className="image" src={akhil} />
+                <img className="image" src={akhil} alt="akhil.jpg" />
             </div>
             <div className="about-me">
                 <div className="hello">Hello</div>
-                <h2>&nbsp;A bit about me</h2>
+                <h3>&nbsp;A bit about me</h3>
                 <p>
                     &nbsp;I'm a <span className="pyth">Pyth</span>
                     <span className="dj">on Dj</span>
