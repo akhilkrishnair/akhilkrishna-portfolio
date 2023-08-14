@@ -1,18 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
+import "./App.css";
+import ReactRouter from "./mainrouter/ReactRouter";
 function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Home/>
-      <Footer/>
+    return (
+        <div>
+          <ReactRouter/>
 
-    </div>
-  );
+        </div>       
+    );
 }
 
 export default App;

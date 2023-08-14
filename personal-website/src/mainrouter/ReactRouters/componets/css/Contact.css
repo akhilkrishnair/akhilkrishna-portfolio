@@ -1,0 +1,82 @@
+
+.main{
+    padding: 30px;
+}
+h1{
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10px 40px 10px;
+}
+
+.contact-form{
+    transition: 0.4s ease-in-out;
+    width: 36%;
+    border-radius: 10px;
+    padding: 0px 20px 40px 20px;
+    margin-right: 80px;
+}
+
+.input{
+    width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input label{
+    position: absolute;
+    left: 7px;
+    top: -24px;
+}
+
+.input input{
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: solid 1px rgb(7, 96, 7);
+    outline: rgb(142, 218, 142);
+}
+.input textarea{
+    padding: 6px 13px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: solid 1px rgb(7, 96, 7);
+    outline: none;
+    height: 130px;
+}
+
+.input button{
+    transition: 0.5s ease-in-out;
+    padding: 7px 10px;
+    width: 150px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    border: solid 2px rgb(7, 96, 7);
+
+}
+
+.input button:hover{
+    background-color: rgb(7, 96, 7);
+    color: white;
+    box-shadow: 3px 3px 7px rgb(135, 222, 151);
+}
+
+.address{
+    margin: 40px 10px 10px 200px;
+    line-height: 30px;
+}
+.address p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+

@@ -3,7 +3,7 @@
 .bio-container{
     display: flex;
     justify-content: center;
-    margin-top: 4em;
+    transition: 0.4s;
 }
  
 .img-container{
@@ -44,16 +44,24 @@
 }
 
 .pyth{
-    color: rgb(22, 107, 211);
+    color: rgb(29, 117, 171);
+    font-weight: bold;
 }
 .dj{
+    font-weight: bold;
     color: rgb(163, 163, 28);
 }
 .ngo{
     color: green;
+    font-weight: bold;
 }
 .react{
     color: rgb(35, 154, 238);
+    font-weight: bold;
+}
+.js{
+    color: rgb(163, 163, 28);
+    font-weight: bold;
 }
 
 
@@ -70,20 +78,20 @@
 .my-cv{
     width: 130px;
     height: 130px;
-    background-color: rgb(25, 105, 232);
+    background-color: rgb(70, 148, 211);
     border-radius: 50%;
 }
 .projects{
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background-color: violet;
+    background-color: rgb(209, 211, 84);
     
 }
 .contact-me{
     width: 130px;
     height: 130px;
-    background-color: rgb(9, 150, 9);
+    background-color: rgb(89, 173, 89);
     border-radius: 50%;
 
 }
@@ -97,6 +105,10 @@
     justify-content: center;
     font-weight: 600;
     transition: 0.5s;
+}
+.service-link{
+    color: black;
+    text-decoration: none;
 }
 .my-cv:hover{
     background-color: antiquewhite;

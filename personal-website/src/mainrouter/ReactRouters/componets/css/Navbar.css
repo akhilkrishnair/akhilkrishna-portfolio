@@ -3,7 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 25px;
+    margin-bottom: 4em;
+}
 
+.name-link{
+    text-decoration: none;
+    color: black;
 }
 
 .my-name{
@@ -37,21 +42,28 @@
 
 ul{
     list-style: none;
+    text-decoration: none;
 }
 li{
     display: inline;
     margin-right: 20px;
-    
+    text-decoration: none;
 }
 
-ul li:not(:hover){
+
+.links {
+    text-decoration: none;
+    color: rgb(46, 45, 45);
     transition: 0.4s;
+
+
 }
-ul li:hover{
+.links:hover{
     cursor: pointer;
     color: rgb(9, 163, 9);
 
 }
+
 
 
 /* ----- navbar end ---- */

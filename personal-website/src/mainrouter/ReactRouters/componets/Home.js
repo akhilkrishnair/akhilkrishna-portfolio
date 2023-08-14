@@ -1,6 +1,8 @@
 import React from "react";
 import "./css/Home.css";
 import akhil from "./images/akhil.jpg";
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <div className="bio-container">
@@ -13,14 +15,24 @@ const Home = () => {
                 <p>
                     &nbsp;I'm a <span className="pyth">Pyth</span>
                     <span className="dj">on Dj</span>
-                    <span className="ngo">ango</span> <span className="react">React</span> Developer, <br />
+                    <span className="ngo">ango</span>{" "}
+                    <span className="react">
+                        React <span className="js">JS</span>
+                    </span>{" "}
+                    Developer, <br />
                     &nbsp;specialiazed in web technologies
                 </p>
 
                 <div className="services">
-                    <div className="my-cv">Resume</div>
-                    <div className="projects">Projects</div>
-                    <div className="contact-me">Contact me</div>
+                    <Link className="service-link" >
+                        <div className="my-cv">Resume</div>
+                    </Link>
+                    <Link className="service-link" to={"projects"} >
+                        <div className="projects">Projects</div>
+                    </Link>
+                    <Link className="service-link" to={"contact"} >
+                        <div className="contact-me">Contact me</div>
+                    </Link>
                 </div>
             </div>
         </div>
