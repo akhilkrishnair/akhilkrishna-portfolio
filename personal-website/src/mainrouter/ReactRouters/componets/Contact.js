@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef,useState } from 'react';
 import "./css/Contact.css";
+import emailjs from '@emailjs/browser';
+
+
 const Contact = () => {
+  
+    const [successmsg,setSuccessmsg] = useState("Submit")
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_j7vqcys', 'template_se7kjno', form.current, 'hfRWiExAtPMRrdmAZ')
+          .then((result) => {
+              console.log(result.text);
+              e.target.reset();
+              setSuccessmsg("Thanks for contacting me");
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+    
+
+
+
     return (
         <div className="main">
             <h1>Contact</h1>
@@ -15,24 +38,25 @@ const Contact = () => {
 
                 </div>
                 <div className="contact-form">
-                    <form>
+                    <form ref={form} onSubmit={sendEmail} >
                         <div className="input">
-                            <input id="first-name" />
-                            <label for="first-name" >Your Name</label>
+                            <input type="text" name="user_name" id="first-name" />
+                            <label  >Your Name</label>
                         </div>
                       
                         <div className="input">
-                            <input id="subject" />
-                            <label for="subject" >Email</label>
+                            <input type="email" name="reply_to" id="subject" />
+                            <label  >Email</label>
                         </div>
                         <div className="input">
-                            <textarea id="message" ></textarea>
-                            <label for="message" >Message</label>
+                            <textarea name='message' id="message" ></textarea>
+                            <label >Message</label>
                         </div>
                         <div className="input">
-                            <button>Submit</button>
+                            <button type="submit" >Submit</button>
                         </div>
                     </form>
+                  <p className='successmsg'>{successmsg}</p>
                 </div>
             </div>
         </div>

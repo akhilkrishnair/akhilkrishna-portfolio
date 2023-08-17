@@ -7,7 +7,10 @@ const Home = () => {
     return (
         <div className="bio-container">
             <div className="img-container">
+                <div className="img">
+
                 <img className="image" src={akhil} alt="akhil.jpg" />
+                </div>
             </div>
             <div className="about-me">
                 <div className="hello">Hello</div>

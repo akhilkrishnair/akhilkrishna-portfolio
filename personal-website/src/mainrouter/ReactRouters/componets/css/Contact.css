@@ -8,7 +8,7 @@ h1{
 .contact-container{
     display: flex;
     justify-content: space-between;
-    padding: 60px 10px 40px 10px;
+    padding: 60px 10px 0px 10px;
 }
 
 .contact-form{
@@ -31,6 +31,7 @@ h1{
     position: absolute;
     left: 7px;
     top: -24px;
+    transition: 0.3s ease-in-out;
 }
 
 .input input{
@@ -39,14 +40,18 @@ h1{
     font-size: 15px;
     border: solid 1px rgb(7, 96, 7);
     outline: rgb(142, 218, 142);
+    transition: 0.3s ease-in-out;
+
 }
 .input textarea{
-    padding: 6px 13px;
+    padding: 10px 13px;
     border-radius: 10px;
     font-size: 15px;
     border: solid 1px rgb(7, 96, 7);
     outline: none;
     height: 130px;
+    transition: 0.4s ease-in-out;
+
 }
 
 .input button{
@@ -66,7 +71,7 @@ h1{
 .input button:hover{
     background-color: rgb(7, 96, 7);
     color: white;
-    box-shadow: 3px 3px 7px rgb(135, 222, 151);
+    box-shadow: 0px 0px 7px 7px rgba(135, 222, 151,0.4);
 }
 
 .address{
@@ -77,6 +82,22 @@ h1{
     font-size: 16px;
     font-weight: 300;
 }
+
+.input input:focus,
+.input textarea:focus{
+    box-shadow: 0px 0px 1px 1px rgb(135, 222, 151) ;
+}
+.input input:focus~label,
+.input textarea:focus~label{
+    color: green;
+    text-shadow: 0px 0px 1px 1px rgb(135, 222, 151) ;
+
+}
+
+.successmsg{
+    color: darkgreen;
+}
+
 
 
 

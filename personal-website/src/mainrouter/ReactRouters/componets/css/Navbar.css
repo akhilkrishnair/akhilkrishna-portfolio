@@ -64,7 +64,9 @@ li{
 
 }
 
-
+.active{
+    color: green;
+}
 
 /* ----- navbar end ---- */
 
