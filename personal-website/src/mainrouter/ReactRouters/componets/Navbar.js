@@ -18,7 +18,7 @@ const Navbar = () => {
                 </div>
                 <ul>
                     <li>
-                        <NavLink className="links" to={"Personal-website"}>
+                        <NavLink className="links" to={"Personal-website/"}>
                             Home
                         </NavLink>
                     </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <NavLink className="links" to={"Personal-website/projects"}>
+                        <NavLink className="links" to={"Personal-website/Projects/"}>
                             Projects
                         </NavLink>
                     </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <NavLink className="links" to={"Personal-website/contact"}>
+                        <NavLink className="links" to={"Personal-website/Contact/"}>
                             Contact me
                         </NavLink>
                     </li>
