@@ -1,4 +1,44 @@
 .container{
+    padding: 40px 130px 20px 130px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
+.left-section{
+    padding: 40px 20px;
+}
+
+
+
+.proj-title{
+    font-family: 'Sarala', sans-serif;   
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+}
+.description{
+    font-family: 'Helvetica Neue';   
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+
+}
+
+.right-section{
+    padding: 40px 20px;
+    margin-left: 3em;
+}
+
+.proj-img-container{
+    position: relative;
+    width: 28em;
+    height: 18em;
+}
+.proj-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+

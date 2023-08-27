@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   
-    const [successmsg,setSuccessmsg] = useState("Submit")
+    const [successmsg,setSuccessmsg] = useState("")
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -40,16 +40,16 @@ const Contact = () => {
                 <div className="contact-form">
                     <form ref={form} onSubmit={sendEmail} >
                         <div className="input">
-                            <input type="text" name="user_name" id="first-name" />
+                            <input type="text" name="user_name" id="first-name" required/>
                             <label  >Your Name</label>
                         </div>
                       
                         <div className="input">
-                            <input type="email" name="reply_to" id="subject" />
+                            <input type="email" name="reply_to" id="subject" required/>
                             <label  >Email</label>
                         </div>
                         <div className="input">
-                            <textarea name='message' id="message" ></textarea>
+                            <textarea name='message' id="message" required ></textarea>
                             <label >Message</label>
                         </div>
                         <div className="input">

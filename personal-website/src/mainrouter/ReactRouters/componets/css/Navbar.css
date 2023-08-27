@@ -38,6 +38,7 @@
 .letter-a{
     font-size: larger;
     font-weight: 500;
+    transition: 0.4s;
 }
 
 ul{
