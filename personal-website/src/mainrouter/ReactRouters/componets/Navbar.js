@@ -11,14 +11,14 @@ const Navbar = () => {
             <div className="nav-container">
                 <div className="my-name">
                     <div className="rounded"></div>
-                    <Link className="name-link" to={"/"} >
+                    <Link className="name-link" to={"Personal-website"} >
                     <span className="letter-a">A</span>khil <span className="letter-a">K</span>rishna
                     <span className="role"> Developer</span>
                     </Link>
                 </div>
                 <ul>
                     <li>
-                        <NavLink className="links" to={"/"}>
+                        <NavLink className="links" to={"Personal-website"}>
                             Home
                         </NavLink>
                     </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <NavLink className="links" to={"projects"}>
+                        <NavLink className="links" to={"Personal-website/projects"}>
                             Projects
                         </NavLink>
                     </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <NavLink className="links" to={"contact"}>
+                        <NavLink className="links" to={"Personal-website/contact"}>
                             Contact me
                         </NavLink>
                     </li>
