@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Personal-website/static/css/main.f86d197d.css",
+    "main.js": "/Personal-website/static/js/main.9366b5bd.js",
+    "static/js/787.5809834d.chunk.js": "/Personal-website/static/js/787.5809834d.chunk.js",
+    "static/media/akhil.jpg": "/Personal-website/static/media/akhil.ee795fe063e570974d41.jpg",
+    "static/media/ecommerce.jpg": "/Personal-website/static/media/ecommerce.cdf1771e895bae936065.jpg",
+    "index.html": "/Personal-website/index.html",
+    "main.f86d197d.css.map": "/Personal-website/static/css/main.f86d197d.css.map",
+    "main.9366b5bd.js.map": "/Personal-website/static/js/main.9366b5bd.js.map",
+    "787.5809834d.chunk.js.map": "/Personal-website/static/js/787.5809834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f86d197d.css",
+    "static/js/main.9366b5bd.js"
+  ]
+}
