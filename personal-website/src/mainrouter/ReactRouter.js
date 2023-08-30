@@ -12,9 +12,9 @@ const ReactRouter = () => {
         <div>
             <Navbar/>
             <Routes>
-                <Route path="Personal-website/" element= {<Home/>} />
-                <Route path="Personal-website/Projects/" element = {<Projects/>} />
-                <Route path="Personal-website/Contact/" element = {<Contact/>} />
+                <Route path="/" element= {<Home/>} />
+                <Route path="Projects" element = {<Projects/>} />
+                <Route path="Contact" element = {<Contact/>} />
             </Routes>
             <Footer/>
         </div>

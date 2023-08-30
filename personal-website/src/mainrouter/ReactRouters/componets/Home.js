@@ -30,10 +30,10 @@ const Home = () => {
                     <Link className="service-link" >
                         <div className="my-cv">Resume</div>
                     </Link>
-                    <Link className="service-link" to={"projects"} >
+                    <Link className="service-link" to={"Projects"} >
                         <div className="projects">Projects</div>
                     </Link>
-                    <Link className="service-link" to={"contact"} >
+                    <Link className="service-link" to={"Contact"} >
                         <div className="contact-me">Contact me</div>
                     </Link>
                 </div>

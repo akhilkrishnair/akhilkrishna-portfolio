@@ -12,8 +12,10 @@ h1{
 }
 
 .contact-form{
+    display: flex;
+    justify-content: center;
     transition: 0.4s ease-in-out;
-    width: 36%;
+    /* width: 36%; */
     border-radius: 10px;
     padding: 0px 20px 40px 20px;
     margin-right: 80px;
@@ -100,4 +102,71 @@ h1{
 
 
 
+/* ----- media query stats ----- */
 
+@media (min-width:1025px) and (max-width:1200px){
+    .address {
+        margin: 40px 10px 10px 80px;
+    }
+
+    .contact-form {
+        width: 43%;
+    }
+
+    .input {
+        width: 370px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .address {
+        margin: 40px 10px 10px 20px;
+    }
+
+    .contact-form {
+        width: 46%;
+    }
+
+    .input {
+        width: 370px;
+    }
+
+    .address h3{
+        font-size: 17px;
+    }
+
+
+}
+
+
+@media (max-width:768px){
+    .contact-container{
+        flex-direction: column;
+
+    }
+    .address{
+        margin-left: 20px;
+        margin-bottom: 60px;
+    }
+    .contact-form{
+        margin-left: -173px;
+    }
+
+    .contact-form form{
+        width: 10%;
+        margin-left: 0;
+    }
+
+    .input{
+        width: 300px;
+    }
+    
+    .input textarea{
+        font-size: 10px;
+    
+    }
+
+    
+    
+
+}

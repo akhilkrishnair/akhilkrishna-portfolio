@@ -42,3 +42,64 @@
     height: 100%;
 }
 
+
+
+
+/*  ---- media query starts -----  */
+
+
+@media (min-width:1025px) and (max-width:1200px){
+    .right-section {
+        margin-left: 1em;
+    }
+
+    .proj-img-container {
+        width: 20em;
+        height: 14em;
+    }
+
+    .container {
+        padding: 40px 60px 20px 60px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .right-section {
+        margin-left: 1em;
+        padding-top: 80px;
+    }
+
+    .container {
+        padding: 40px 10px 0px 10px;
+    }
+
+    .proj-img-container {
+        width: 16em;
+        height: 12em;
+    }
+
+
+}
+
+@media (max-width:768px){
+    .right-section {
+        display: none;
+    }
+
+    .container {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .proj-img-container {
+        width: 16em;
+        height: 12em;
+    }
+    .description{
+        line-height: 22px;
+    }
+    .left-section{
+        padding: 10px 10px;
+    }
+
+}
