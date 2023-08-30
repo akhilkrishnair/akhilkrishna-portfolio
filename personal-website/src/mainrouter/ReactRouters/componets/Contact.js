@@ -1,12 +1,18 @@
-import React, { useRef,useState } from 'react';
+import React, { useRef } from 'react';
 import "./css/Contact.css";
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 
 const Contact = () => {
   
-    const [successmsg,setSuccessmsg] = useState("")
     const form = useRef();
+
+    const setSuccessmsg = ()=>  Swal.fire(
+        'Message received',
+        'Thank You for contact me i will replay soon',
+        'success'
+      )
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,7 +21,7 @@ const Contact = () => {
           .then((result) => {
               console.log(result.text);
               e.target.reset();
-              setSuccessmsg("Thanks for contacting me");
+              setSuccessmsg();
           }, (error) => {
               console.log(error.text);
           });
@@ -56,9 +62,9 @@ const Contact = () => {
                             <button type="submit" >Submit</button>
                         </div>
                     </form>
-                  <p className='successmsg'>{successmsg}</p>
                 </div>
             </div>
+                  {/* <span className='successmsg'>{successmsg}</span> */}
         </div>
     );
 };
