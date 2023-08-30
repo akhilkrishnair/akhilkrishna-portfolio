@@ -144,7 +144,6 @@
     .contact-me {
         width: 110px;
         height: 110px;
-        border-radius: 50%;
     }
 }
 
@@ -178,18 +177,15 @@
 
 
 @media (max-width: 768px) {
-    .hello, .hello h3 {
-        display: none;
-    }
+    
     .img-container {
         display: none;
     }
 
     .hello {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: bolder;
         margin-bottom: 30px;
-        margin-top: 45px;
     }
 
     .about-me h3 {
@@ -199,9 +195,8 @@
     .my-cv,
     .projects,
     .contact-me {
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
+        width: 105px;
+        height: 105px;
     }
 
 }
