@@ -107,7 +107,7 @@ li {
         position: absolute;
         top: 0;
         right: 100%;
-        width: 100vw;
+        width: 50vw;
         height: 100vh;
         padding-top: 100px;
         z-index: 1;
