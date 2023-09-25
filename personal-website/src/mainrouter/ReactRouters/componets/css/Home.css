@@ -1,5 +1,11 @@
 /* ----- bio start ----- */
 
+.social-media-icon-profile{
+    display: none;
+}
+
+
+
 .bio-container {
     display: flex;
     justify-content: center;
@@ -199,4 +205,89 @@
         height: 105px;
     }
 
+}
+
+
+
+
+@keyframes rotation-icon{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+@media (min-width:1200px){
+      
+    .img-container {
+        width: 250px;
+        height: 240px;
+        border-radius: 50%;
+        margin-top: 70px;
+        
+    }
+    .img-containerr{
+        width: 250px;
+        height: 240px;
+        border-radius: 50%;
+        margin-top: 70px;
+
+    }
+    .img-container:hover{
+        animation-play-state: paused;
+    }
+    .img{
+        position: relative;
+        left: 0;
+    }
+    .bio-container{
+        justify-content: space-evenly;
+    }
+    .social-media-icon-profile{
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 50px;
+        animation: rotation-icon 6s infinite linear;
+        
+    }
+    .git{
+        left: -20%;
+        top: -21%;
+    }
+    .python{
+        left: -20%;
+        top: 100%;
+
+    }
+    .javascript{
+        top: -21%;
+    left: 100%;
+
+    }
+    .django{
+        bottom: -21%;
+        left: 100%;
+    }
+    .react{
+        top: -44%;
+    left: 41%;
+
+    }
+    .sql{
+        bottom: -41%;
+    left: 40%;
+
+    }
+    .rest-api{
+    top: 36%;
+    left: -43%;
+    }
+    .mysql{
+    right: -41%;
+    top: 37%;
+    }
+
+    
 }
