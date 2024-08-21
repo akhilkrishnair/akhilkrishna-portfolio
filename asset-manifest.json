@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Personal-website/static/css/main.5b59d97e.css",
-    "main.js": "/Personal-website/static/js/main.7115be9d.js",
-    "static/js/787.5809834d.chunk.js": "/Personal-website/static/js/787.5809834d.chunk.js",
-    "static/media/akhil.jpg": "/Personal-website/static/media/akhil.ee795fe063e570974d41.jpg",
-    "static/media/ecommerce.jpg": "/Personal-website/static/media/ecommerce.cdf1771e895bae936065.jpg",
-    "index.html": "/Personal-website/index.html",
-    "main.5b59d97e.css.map": "/Personal-website/static/css/main.5b59d97e.css.map",
-    "main.7115be9d.js.map": "/Personal-website/static/js/main.7115be9d.js.map",
-    "787.5809834d.chunk.js.map": "/Personal-website/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/akhilkrishna-portfolio/static/css/main.5bb47c21.css",
+    "main.js": "/akhilkrishna-portfolio/static/js/main.ff2fbaff.js",
+    "static/js/787.3ab4df3e.chunk.js": "/akhilkrishna-portfolio/static/js/787.3ab4df3e.chunk.js",
+    "static/media/akhil-vanilla.png": "/akhilkrishna-portfolio/static/media/akhil-vanilla.4156b93422b3dbb7386c.png",
+    "static/media/ecommerce.jpg": "/akhilkrishna-portfolio/static/media/ecommerce.cdf1771e895bae936065.jpg",
+    "index.html": "/akhilkrishna-portfolio/index.html",
+    "main.5bb47c21.css.map": "/akhilkrishna-portfolio/static/css/main.5bb47c21.css.map",
+    "main.ff2fbaff.js.map": "/akhilkrishna-portfolio/static/js/main.ff2fbaff.js.map",
+    "787.3ab4df3e.chunk.js.map": "/akhilkrishna-portfolio/static/js/787.3ab4df3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b59d97e.css",
-    "static/js/main.7115be9d.js"
+    "static/css/main.5bb47c21.css",
+    "static/js/main.ff2fbaff.js"
   ]
 }
