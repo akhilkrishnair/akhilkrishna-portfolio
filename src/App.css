@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(238, 238, 238);
+}
+
+@keyframes main-container{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+main{
+  animation: main-container 0.6s ease-out;
+  padding: 30px;
+  padding-top: 14em;
+}
+main h1{
+  margin-bottom: 60px;
+  font-size: 43px;
+  font-weight: 800;
+}
+
+
+@media (max-width:768px){
+    main{
+      padding-top: 150px;
+    }
+    main h1{
+      margin-bottom: 30px;
+    }
+}

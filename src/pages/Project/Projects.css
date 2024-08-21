@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@keyframes project-container{
+    from{
+        scale: 0.5;
+        transform: translateX(-20%);
+    }
+    to{
+        scale: 1;
+        transform: translateX(0%);
+    }
+}
+.container{
+    padding: 10px 200px 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .left-section{
+    padding: 40px 0px;
+    width: 45%;
+}
+
+.proj-title{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+.left-section .description{
+    font-family: League Spartan;
+    font-weight: 330;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+
+.container .right-section{
+    padding: 40px 0px;
+    margin-left: 3em;
+    margin-top: 60px;
+    width: 45%;
+}
+
+.proj-video-container{
+    width: 33em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 19px; */
+    overflow: hidden;
+    /* outline: solid 21px rgb(249, 249, 249);
+    box-shadow: -25px 25px 35px rgba(15, 15, 15, 0.8); */
+}
+.proj-video{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .each-details-container{
+    width: 100%;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+.container .each-details-container  h3{
+    margin-bottom: 10px;
+}
+.container .project-links ul{
+    list-style-type: none;
+}
+.container .project-links ul li a{
+    text-decoration: none;
+}
+.container .key-features ul{
+    margin-left: 20px;
+}
+.container .key-features li{
+    margin-bottom: 8px;
+}
+
+
+
+/*  ---- media query starts -----  */
+
+@media (min-width:769px){
+   .container{
+        animation: project-container linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+   }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .right-section {
+        margin-left: 1em;
+    }
+
+    .proj-video-container {
+        width: 100%;
+        height: 13.1em;
+    }
+
+    .container {
+        padding: 40px 60px 20px 60px;
+    }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .container .right-section {
+        margin-left: 1em;
+        padding-top: 80px;
+        margin-top: 0px;
+    }
+
+    .container {
+        padding: 40px 10px 0px 10px;
+    }
+
+    .proj-video-container {
+        width: 16em;
+        height: 12em;
+    }
+
+
+}
+
+@media (max-width:768px){
+    .container{
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .container .each-details-container.project-links{
+        margin-top: 30px;
+    }
+    
+    .container .right-section {
+        margin-left: 0em;
+        padding: 10px 4px 10px 4px;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .proj-video-container {
+        width: 42em;
+        height: 22em;
+    }
+    .description{
+        line-height: 22px;
+    }
+    .container .left-section{
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:489px){
+    .proj-video-container{
+        width: 100%;
+        height: 12em;
+    }
+}

@@ -1,0 +1,228 @@
+/* ----- bio start ----- */
+
+
+@keyframes home{
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes services{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.bio-container {
+    animation: home 0.5s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+    margin-bottom: 140px;
+}
+
+.bio-container .image-container {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 35px;
+}
+
+.bio-container .image-container .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.9s ease-in-out;
+}
+
+.bio-container .about-me .hello {
+    font-size: 105px;
+    font-weight: bolder;
+    margin-left: -6px;
+    margin-bottom: 25px;
+}
+
+.bio-container .about-me h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+}
+.bio-container .about-me p {
+    font-family: League Spartan;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 320;
+}
+
+.pyth {
+    color: rgb(29, 117, 171);
+    font-weight: 600;
+}
+.dj {
+    font-weight: 600;
+    color: rgb(163, 163, 28);
+}
+.ngo {
+    color: green;
+    font-weight: 600;
+}
+.react {
+    color: rgb(35, 154, 238);
+    font-weight: 600;
+}
+.js {
+    color: rgb(163, 163, 28);
+    font-weight: bold;
+}
+
+.bio-container .about-me .services {
+    display: flex;
+    margin-top: 30px;
+    margin-left:-10px;
+}
+
+.about-me .services .service-link .my-cv {
+    animation: services 0.2s linear;
+    background-color: rgb(70, 148, 211);
+}
+.about-me .services .service-link .projects {
+    animation: services 0.4s linear;
+    background-color: rgb(209, 211, 84);
+}
+.about-me .services .service-link .contact-me {
+    animation: services 0.7s linear;
+    background-color: rgb(89, 173, 89);
+}
+
+.about-me .services .service-link .my-cv,
+.about-me .services .service-link .projects,
+.about-me .services .service-link .contact-me {
+    margin-right: 15px;
+    border: solid 1px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.about-me .services .service-link {
+    color: black;
+    text-decoration: none;
+}
+.about-me .services .service-link:hover > :first-child{
+    background-color: white; 
+}
+
+
+
+
+/* --------------- media query starts --------- */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .image-container {
+        border-radius: 50%;
+        padding: 20px 10px;
+        margin-top: 50px;
+    }
+    .hello {
+        font-size: 80px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+
+    .my-cv,
+    .projects,
+    .contact-me {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .image-container {
+        width: 320px;
+        height: 320px;
+        margin-top: 50px;
+    }
+
+    .hello {
+        font-size: 60px;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        margin-top: 45px;
+    }
+
+    .about-me h3 {
+        font-size: 19px;
+    }
+
+    .my-cv,
+    .projects,
+    .contact-me {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bio-container {
+        margin-top: 140px;
+    }
+    .image-container {
+        margin-top: 35px;
+        width: 300px;
+        height: 300px;
+    }
+    .hello {
+        font-size: 40px;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    .about-me h3 {
+        font-size: 19px;
+    }
+
+    .my-cv,
+    .projects,
+    .contact-me {
+        width: 105px;
+        height: 105px;
+    }
+
+}
+
+
+@media (min-width:1201px){     
+}
+
+@media (max-width:489px){
+    .bio-container{
+        flex-direction: column-reverse;
+        padding-left: 8px;
+    }
+    .image-container{
+        height: 300px;
+        width: 300px;
+    }
+}

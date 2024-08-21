@@ -1,0 +1,240 @@
+@keyframes navlink-visible{
+    0%{
+        right: 0%;
+        width: 0vw;
+        padding-left: 15%;
+        height: 0vh;
+        border-bottom-left-radius: 250%;
+    }
+    50%{
+        padding-left: 45%;
+    }
+    100%{
+        width: 100vh;
+        height: 100vh;
+        padding-left: 55%;
+    }
+}
+
+@keyframes navlink-hide{
+    0%{
+        display: inline-block;
+        right: 0%;
+        width: 100vw;
+        padding-left: 15%;
+        height: 100vh;
+        border-bottom-left-radius: 250%;
+    }
+    45%{
+        width: 100vw;
+        padding-left: 15%;
+    }
+    100%{
+        height: 0vh;
+        width: 0vh;
+        border-bottom-left-radius: 350%;
+        display: none;
+    }
+}
+
+.fa-close-Btn,
+.fa-bars {
+    display: none;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+.name-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.my-name {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    position: relative;
+    margin-left: 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.my-name svg{
+    font-size: 22px;
+    color: gray;
+    margin-bottom: -3px;
+}
+.rounded {
+    width: 30px;
+    height: 30px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    position: absolute;
+    left: -40px;
+}
+.role {
+    font-size: large;
+    font-weight: lighter;
+    margin-left: 6px;
+}
+
+.navlinks-container {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navlinks-container li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+    transition: 0.4s;
+}
+.links:hover {
+    cursor: pointer;
+    color: #0cbf0c;
+}
+
+.links.active {
+    color: #0cbf0c;
+}
+
+/* ----- navbar end ---- */
+
+
+
+
+/* ----- media query starts ----- */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .links {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    ul li {
+        margin-right: 14px;
+    }
+    .links {
+        font-size: 15px;
+    }    
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 80px;
+    }
+
+    .navlinks-container{
+        animation: navlink-hide 0.2s linear;
+        overflow: hidden;
+        display: none;
+        background-color: rgb(12, 99, 175);
+        position: absolute;
+        top: 0;
+        right: 0%;
+        padding-top: 100px;
+        z-index: 1;
+    }
+    .menu-clicked {
+        animation: navlink-visible 0.4s linear;
+        display: inline-block;
+        right: 0%;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 160px;
+    }
+    .navlinks-container li {
+        display: block;
+        margin-bottom: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .links {
+        color: white;
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: x-large;
+
+    }
+    .navlinks-container .pipe-symbols {
+        display: none;
+    }
+    .links:hover {
+        color: white;
+    }
+    .links.active{
+        background-color: rgb(238, 238, 238);
+        color: #0cbf0c;
+    }
+    .fa-close-Btn {
+        display: inline-block;
+        position: absolute;
+        font-size: 33px;
+        right: 9%;
+        top: 4%;
+        color: white;
+    }
+    .fa-bars {
+        display: inline-block;
+        position: absolute;
+        font-size: 33px;
+        top: 25px;
+        right: 30px;
+    }
+    .my-name {
+        margin-left: -25px;
+    }
+
+    .my-name span {
+        display: inline-block;
+    }
+}
+
+@media (max-width:489px){
+    .fa-bars,.fa-close-Btn{
+        font-size: 23px;
+    }
+    .my-name .rounded{
+        display: none;
+    }
+    .my-name > a{
+        font-size: 20px;
+        color: rgb(12, 99, 175);
+    }
+    .my-name .role{
+        color: black;
+        font-size: 15px;
+    }
+    .my-name {
+        margin-left: -55px;
+    }
+    .navlinks-container{
+        padding-top: 120px;
+    }
+    .navlinks-container li{
+        margin-bottom: 35px;
+    }
+}

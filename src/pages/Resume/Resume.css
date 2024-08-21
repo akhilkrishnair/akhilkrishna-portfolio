@@ -1,0 +1,92 @@
+main .resume-container{
+    padding: 40px 200px 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.1px grey;
+    width: 93%;
+    margin: auto;
+}
+main .resume-container.last-child{
+    border: none;
+}
+.resume-container .left-section{
+    width: 50%;
+}
+.resume-container .right-section{
+    width: 50%;
+    font-size: 17px;
+    line-height: 33px;
+    letter-spacing: 0.6px;
+
+}
+.resume-container .left-section .section-title{
+    font-size: 26px;
+}
+.resume-container .right-section .section-description ul{
+    font-weight: bold;
+    margin-left: 135px;
+}
+.resume-container .right-section .section-description ul li{
+    font-weight: normal;
+    margin-left: 40px;
+}
+.resume-container .right-section .section-description{
+    display: flex;
+    margin-left: 40px;
+}
+.resume-container .right-section .section-description .year-of-passout{
+    margin-right: 40px;
+    font-family: Readex Pro;
+}
+.resume-container .right-section .section-description .university-details-container h4{
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+
+/* media queries starts */
+
+@media (max-width:768px){
+    main .resume-container{
+        flex-direction: column;
+        padding: 40px 0px 30px 0px;        
+    }
+    main .resume-container.last-child{
+        padding-bottom: 0px;
+    }
+    .resume-container .left-section {
+        width: 100%;
+    }
+    .resume-container .right-section {
+        width: 100%;
+    }
+    .resume-container .left-section .section-title{
+        margin-bottom: 20px;
+    }
+    .resume-container .right-section .section-description {
+        flex-direction: column;
+    }
+    .resume-container .right-section .section-description ul{
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    .resume-container .right-section .section-description .year-of-passout {
+        margin-bottom: 10px;
+    }
+    .right-section .section-description .university-details-container{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:991px){
+    .resume-container .right-section .section-description ul{
+        margin-left: 135px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px){
+    .resume-container .right-section .section-description ul{
+        margin-left: 0px;
+    }
+}
