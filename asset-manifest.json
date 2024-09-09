@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.61b5b930.css",
+    "main.css": "/static/css/main.b82f31fe.css",
     "main.js": "/static/js/main.7ce89e9c.js",
     "static/js/787.3ab4df3e.chunk.js": "/static/js/787.3ab4df3e.chunk.js",
     "static/media/akhil-krishna-vanilla.png": "/static/media/akhil-krishna-vanilla.4156b93422b3dbb7386c.png",
@@ -59,12 +59,12 @@
     "static/media/register-email-verification.png": "/static/media/register-email-verification.7f89372b3418427ac535.png",
     "static/media/give_review_1.png": "/static/media/give_review_1.c2b525f2b18012ed6d65.png",
     "index.html": "/index.html",
-    "main.61b5b930.css.map": "/static/css/main.61b5b930.css.map",
+    "main.b82f31fe.css.map": "/static/css/main.b82f31fe.css.map",
     "main.7ce89e9c.js.map": "/static/js/main.7ce89e9c.js.map",
     "787.3ab4df3e.chunk.js.map": "/static/js/787.3ab4df3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61b5b930.css",
+    "static/css/main.b82f31fe.css",
     "static/js/main.7ce89e9c.js"
   ]
 }
