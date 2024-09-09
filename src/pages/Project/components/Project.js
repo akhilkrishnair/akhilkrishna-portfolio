@@ -60,7 +60,6 @@ const Project = ({setPreviewImage,project}) => {
                     <video className='proj-video' controls muted>
                         <source src={videoUrl} type='video/mp4' />
                     </video>
-                    {/* <iframe className='proj-video' width="964" height="523" src="https://www.youtube.com/embed/IYQ-qLFd0Ow?autoplay=0&mute=1" title="CSS Selectors, Combinators, Logical Properties | Css malayalam | web development tutorial" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                 </div>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './KeyFeatures.css';
 import ScreenShotSlider from './ScreenShotSlider';
 
@@ -16,7 +16,7 @@ const KeyFeatures = ({setPreviewImage,keyFeatures}) => {
 
                     {kf.screenShots&&
                     <div className='key-features-screenshots-container'>
-                        <ScreenShotSlider screenShots={kf.screenShots} />                                        
+                        <ScreenShotSlider setPreviewImage={setPreviewImage} screenShots={kf.screenShots} />                                        
                     </div>}    
                              
                 </li>

@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const ScreenShotSlider = ({screenShots}) => {
+const ScreenShotSlider = ({setPreviewImage,screenShots}) => {
     return (
         <Swiper
         spaceBetween={50}
@@ -21,7 +21,7 @@ const ScreenShotSlider = ({screenShots}) => {
                     <div className='key-feature-screenshot-title'>
                         <div className='key-feature-title'>{srs.title}</div>
                         <div 
-                        // onClick={() => setPreviewImage(screenShot.image)}
+                        onClick={() => setPreviewImage(srs.image)}
                         className='key-feature-screenshot'>
                             <img src={srs.image} alt='key-feature.jpg'/>
                         </div>
