@@ -1,0 +1,22 @@
+.image-preview-container > .image-container{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 11px 11px 10px rgba(red, green, blue, .6); */
+}
+
+@keyframes img-preview{
+    0%{
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.image-preview-container > .image-container img{
+    width: 100%;
+    animation: img-preview 0.5s ease-in-out;
+    box-shadow: 5px 5px 30px rgba(28, 28, 28, 0.6);
+}

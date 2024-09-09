@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import ProfileImage from "./components/ProfileImage";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 
 const Home = () => {
+    useEffect(() => {
+        window.scroll(0,0)
+    },[])
     return (
         <div className="bio-container">
             <ProfileImage />

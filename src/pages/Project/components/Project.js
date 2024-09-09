@@ -1,8 +1,11 @@
 import React from 'react'
+import KeyFeatures from './KeyFeatures'
 
-const Project = ({project}) => {
+const Project = ({setPreviewImage,project}) => {
     const {
         title,
+        videoUrl,
+        links,
         description,
         description2,
         description3,
@@ -11,12 +14,21 @@ const Project = ({project}) => {
     } = project
 
     const renderProjectLinks = () => {
+
+        const {liveLink, gitHubBackendLink, gitHubFrontendLink} = links
+
+        if (!liveLink&&!gitHubBackendLink&&!gitHubFrontendLink) return 
+
         return (
             <div className='each-details-container project-links'>
                 <h3>Links </h3> 
                 <ul>
-                    <li><a href='https://e-shop-personal-af87f.web.app/#/' target='_blank' >Live Demo</a></li>
-                    <li>GitHub Repository <a href='#' target='_blank' > Backend</a> | <a href='#' target='_blank' >Frontend</a> </li>
+                    {liveLink&&<li><a href={liveLink} target='_blank' >Live Demo</a></li>}
+                    <li>
+                        GitHub Repository 
+                        {gitHubBackendLink&&<a href={gitHubBackendLink} target='_blank'> Backend </a>} 
+                        | {gitHubFrontendLink&&<a href={gitHubFrontendLink} target='_blank' >Frontend</a>} 
+                    </li>
                 </ul>
             </div>
         )
@@ -28,19 +40,6 @@ const Project = ({project}) => {
                 <div className='each-details-container technologies-used'>
                     <h3>Technologies Used </h3> 
                     {technologiesUsed}
-                </div>
-            )
-        }
-    }
-
-    const renderKeyFeatures = () => {
-        if(keyFeatures){
-            return (
-                <div className='each-details-container key-features'>
-                    <h3> Key Features Implemented: </h3> 
-                    <ul className='key-features'>
-                        {keyFeatures.map(kf => <li><b>{kf.title} : </b>{kf.description}</li>)}
-                    </ul>
                 </div>
             )
         }
@@ -58,7 +57,10 @@ const Project = ({project}) => {
 
             <div className="right-section">
                 <div className="proj-video-container">
-                    <iframe className='proj-video' width="964" height="523" src="https://www.youtube.com/embed/IYQ-qLFd0Ow?autoplay=0&mute=1" title="CSS Selectors, Combinators, Logical Properties | Css malayalam | web development tutorial" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video className='proj-video' controls muted>
+                        <source src={videoUrl} type='video/mp4' />
+                    </video>
+                    {/* <iframe className='proj-video' width="964" height="523" src="https://www.youtube.com/embed/IYQ-qLFd0Ow?autoplay=0&mute=1" title="CSS Selectors, Combinators, Logical Properties | Css malayalam | web development tutorial" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                 </div>
             </div>
 
@@ -66,7 +68,7 @@ const Project = ({project}) => {
             
             {renderTechnologiesUsed()}
 
-            {renderKeyFeatures()}
+            <KeyFeatures setPreviewImage={setPreviewImage} keyFeatures={keyFeatures} />
                 
         </div>
     )

@@ -81,6 +81,7 @@ h1{
 }
 .address p{
     font-size: 16px;
+    letter-spacing: 1.5px;
 }
 .address .phone{
     font-family: Readex Pro;

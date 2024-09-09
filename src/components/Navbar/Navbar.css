@@ -7,10 +7,11 @@
         border-bottom-left-radius: 250%;
     }
     50%{
+        width: 100vw;
         padding-left: 45%;
     }
     100%{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         padding-left: 55%;
     }
@@ -23,7 +24,7 @@
         width: 100vw;
         padding-left: 15%;
         height: 100vh;
-        border-bottom-left-radius: 250%;
+        border-bottom-left-radius: 50%;
     }
     45%{
         width: 100vw;
@@ -53,12 +54,18 @@
     align-items: center;
     padding: 25px 25px;
 }
+.nav-container.dark{
+    background-color: black;
+}
 
 .name-link {
     text-decoration: none;
     color: black;
     font-weight: 700;
     font-size: x-large;
+}
+.name-link.dark{
+    color: white;
 }
 
 .my-name {
@@ -107,6 +114,9 @@
     text-decoration: none;
     color: rgb(46, 45, 45);
     transition: 0.4s;
+}
+.links.dark{
+    color: white;
 }
 .links:hover {
     cursor: pointer;
@@ -158,7 +168,7 @@
         z-index: 1;
     }
     .menu-clicked {
-        animation: navlink-visible 0.4s linear;
+        animation: navlink-visible 0.4s ease-in-out;
         display: inline-block;
         right: 0%;
         width: 100vw;

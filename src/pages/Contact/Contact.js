@@ -1,13 +1,21 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import personalInfo from 'data/personalInfo';
 
 
 const Contact = () => {
   
     const [isSubmiting, setIsSubmiting] = useState(false);
     const form = useRef();
+    
+    const {phone, email, location} = personalInfo
+
+    useEffect(() => {
+        window.scroll(0,0)
+    },[])
+
 
     const setSuccessmsg = () =>  Swal.fire(
         'Message received',
@@ -22,7 +30,6 @@ const Contact = () => {
         emailjs
         .sendForm('service_j7vqcys', 'template_se7kjno', form.current, 'hfRWiExAtPMRrdmAZ')
         .then((result) => {
-            // console.log(result.text);
             e.target.reset();
             setSuccessmsg();
         }).catch((error) => {
@@ -39,11 +46,11 @@ const Contact = () => {
             <div className="contact-container">
                 <div className="address">
                   <h3>Phone</h3>
-                  <p className='phone'>98-95-04-77-16</p><br/>
+                  <p className='phone'>{phone}</p><br/>
                   <h3>Email</h3>
-                  <p>akhilkrishnair@gmail.com</p><br/>
+                  <p>{email}</p><br/>
                   <h3>Location</h3>
-                  <p>Kerala</p>
+                  <p>{location}</p>
 
                 </div>
                 <div className="contact-form">

@@ -1,6 +1,3 @@
-body{
-  background-color: rgb(238, 238, 238);
-}
 
 @keyframes main-container{
   from{
@@ -10,6 +7,7 @@ body{
       opacity: 1;
   }
 }
+
 main{
   animation: main-container 0.6s ease-out;
   padding: 30px;

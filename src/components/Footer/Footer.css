@@ -17,6 +17,9 @@
     cursor: pointer;
     color: black;
 }
+.detail.dark{
+    color: white;
+}
 .icon{
     display: inline-block;
     margin-left: 17px;
@@ -25,6 +28,9 @@
 }
 .social-media-links{
     color: black;
+}
+.social-media-links.dark{
+    color: white;
 }
  
 
@@ -54,7 +60,7 @@
 
 }
 
-@media (max-width:991px){
+@media (max-width:1024px){
     .footer-container{
         flex-direction: column;
     }
