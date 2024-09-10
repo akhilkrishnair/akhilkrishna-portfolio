@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b82f31fe.css",
-    "main.js": "/static/js/main.098f6569.js",
+    "main.js": "/static/js/main.ca9a2ccb.js",
     "static/js/787.3ab4df3e.chunk.js": "/static/js/787.3ab4df3e.chunk.js",
     "static/media/akhil-krishna-vanilla.png": "/static/media/akhil-krishna-vanilla.4156b93422b3dbb7386c.png",
     "static/media/home_1.png": "/static/media/home_1.e06026d259b2e64dd684.png",
@@ -33,7 +33,7 @@
     "static/media/cart_2.png": "/static/media/cart_2.2cc2ae521c4ad12c05d0.png",
     "static/media/checkout_3.png": "/static/media/checkout_3.13695d1e4d00f6a8c83e.png",
     "static/media/profile_2.png": "/static/media/profile_2.d064003031074bd36a45.png",
-    "static/media/profile_3.png": "/static/media/profile_3.39ab994fadd0f69e7926.png",
+    "static/media/profile_3.png": "/static/media/profile_3.ea471519e77d03b88329.png",
     "static/media/order_details_1.png": "/static/media/order_details_1.f20a6418db0d8d0eff48.png",
     "static/media/review_1.png": "/static/media/review_1.9d0d55f28a70adc6d6eb.png",
     "static/media/register-shot1.png": "/static/media/register-shot1.257ea026913a08e1a888.png",
@@ -60,11 +60,11 @@
     "static/media/give_review_1.png": "/static/media/give_review_1.c2b525f2b18012ed6d65.png",
     "index.html": "/index.html",
     "main.b82f31fe.css.map": "/static/css/main.b82f31fe.css.map",
-    "main.098f6569.js.map": "/static/js/main.098f6569.js.map",
+    "main.ca9a2ccb.js.map": "/static/js/main.ca9a2ccb.js.map",
     "787.3ab4df3e.chunk.js.map": "/static/js/787.3ab4df3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b82f31fe.css",
-    "static/js/main.098f6569.js"
+    "static/js/main.ca9a2ccb.js"
   ]
 }
